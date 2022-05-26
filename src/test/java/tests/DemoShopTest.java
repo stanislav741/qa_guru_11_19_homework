@@ -16,7 +16,8 @@ import static listeners.CustomAllureListener.withCustomTemplates;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 
-public class DemoShopTest extends TestBase {
+public class DemoShopTest {
+//    public class DemoShopTest extends TestBase {
 
     @Test
     void loggedInWishlistCreateAndClear() {
@@ -35,9 +36,9 @@ public class DemoShopTest extends TestBase {
 //                        .extract().cookie("NOPCOMMERCE.AUTH");
 
         //Applying the auth cookie to the WebDriver
-        open("/Themes/DefaultClean/Content/images/logo.png");
+        open("http://demowebshop.tricentis.com/Themes/DefaultClean/Content/images/logo.png");
 //        getWebDriver().manage().addCookie(new Cookie("NOPCOMMERCE.AUTH", authCookie));
-        open("");
+        open("http://demowebshop.tricentis.com");
 
         //Adding 5 products to the wishlist and verifying if the action is completed
 //        for(int i=0; i<5; i++){

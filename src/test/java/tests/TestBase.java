@@ -5,6 +5,8 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;
 
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+
 
 public class TestBase {
 
@@ -12,7 +14,6 @@ public class TestBase {
     public static void beforeAll(){
         RestAssured.baseURI = "http://demowebshop.tricentis.com";
         Configuration.baseUrl = "http://demowebshop.tricentis.com";
-//      System.setProperty("org.aspectj.weaver.Dump.exception", "false");
     }
 
 }

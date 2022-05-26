@@ -1,5 +1,6 @@
 package tests;
 
+import credentials.Credentials;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Cookie;
 

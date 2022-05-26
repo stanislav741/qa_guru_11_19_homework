@@ -13,7 +13,9 @@ public class TestBase {
     @BeforeAll
     public static void beforeAll(){
         RestAssured.baseURI = "http://demowebshop.tricentis.com";
+
         Configuration.baseUrl = "http://demowebshop.tricentis.com";
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     }
 
 }
